@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websites", "websites", "{EC3D8F03-16B6-429D-9A45-076270BCCDAD}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "www.ophirae.pt", "websites\www.ophirae.pt\", "{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_53782"
+		Debug.AspNetCompiler.PhysicalPath = "websites\www.ophirae.pt\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53782\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_53782"
+		Release.AspNetCompiler.PhysicalPath = "websites\www.ophirae.pt\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_53782\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53782"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC} = {EC3D8F03-16B6-429D-9A45-076270BCCDAD}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {610FDDD8-C21F-4F70-9ADB-488EF0597482}
+	EndGlobalSection
+EndGlobal
