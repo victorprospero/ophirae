@@ -1,8 +1,86 @@
 ﻿body {
-    background-color: #000;
+    background-color: #242424;
     color: #ccc;
+    font-family:"IM Fell English"
 }
 
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+    .row * {
+        padding-left: 0;
+    }
+
+.btn-primary{
+    color:#242424;
+    background-color:#fff;
+    font-style: normal;
+    text-decoration: none;
+    border-color: #ccc;
+}
+    .btn-primary i {
+        font-size:16pt;
+    }
+
+    .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+        color:#242424;
+        background-color:#ccc;
+        border-color: #ccc;
+    }
+
+
+h1{
+    font-size: 30pt;
+    text-align: center!important;
+}
+h2{
+    font-size: 16pt;
+    text-align:center!important;
+}
+    h2 a {
+        text-decoration: none;
+        color:#fff;
+    }
+        h2 a:hover {
+            text-decoration: none;
+            color:#ccc;
+        }
+
+h3 {
+    font-size:16pt;
+    color:#fff;
+}
+
+header div {
+    background-color:#333;
+}
+
+div.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+    background-color: #444;
+    padding-bottom: 15px;
+}
+    div.container-fluid.header {
+        background-color:#333;
+        padding-bottom: 0;
+    }
+
+    div.container-fluid.odd {
+        padding-top:15px;
+        background-color:#333;
+    }
+
+img.album {
+    margin:13px 0;
+    border-radius: 15px;
+}
+
+div.logo-container {
+    height:0;
+    text-align:center;
+}
 
 div.container-youtube {
     margin-top: 20px;
@@ -30,22 +108,16 @@ div.container-spotfy {
         height: 400px;
     }
 
+
 footer.content-footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #000;
-    color: white;
     text-align: center;
     font-size: 10pt;
 }
-
-footer div.carousel-logo {
-    margin: 0;
-    padding: 0;
-}
-
 
 
 /* The side navigation menu */
@@ -53,8 +125,7 @@ footer div.carousel-logo {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
+    width: 300px;
     position: fixed;
     height: 100%;
     overflow: auto;
@@ -63,31 +134,26 @@ footer div.carousel-logo {
     /* Sidebar links */
     .sidebar a {
         display: block;
-        color: black;
         padding: 16px;
         text-decoration: none;
+        color: #ccc;
     }
 
         /* Active/current link */
         .sidebar a.active {
             background-color: #04AA6D;
-            color: white;
+            color: #000;
         }
 
         /* Links on mouse-over */
         .sidebar a:hover:not(.active) {
-            background-color: #555;
-            color: white;
+            background-color: #121212;
         }
 
-div.container-fluid.body {
-    background-color: #444;
-    color: #aaa;
-}
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-    margin-left: 200px;
+    margin-left: 300px;
     height: 1000px;
 }
 
