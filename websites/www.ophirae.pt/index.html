@@ -11,17 +11,17 @@
     <title>Ophirae - Debut album 'Ophidian' out now!</title>
 </head>
 <body>
-
+    <!-- Menu -->
     <div class="sidebar">
         <a class="active" href="index.html">Home</a>
         <a href="#about">Who are us</a>
         <a href="#presskit">Press Kit</a>
-        <a href="https://blackmetalstore.com/en/product/ophirae-ophidian-digipack-cd/" target="_blank">Store</a>
+        <a href="javascript:modalStoreOpen();">Store</a>
         <a href="#contact">Contact</a>
     </div>
 
+    <!-- Header -->
     <div class="content">
-
         <div class="container-fluid header">
             <div class="row">
                 <div class="col-lg-8 p-0">
@@ -40,11 +40,12 @@
                     <div><img class="w-100 album" style="width:85%;" src="img/album-front-cover.png" /></div>
                     <h1>NEW ALBUM</h1>
                     <h1>AVAILABLE</h1>
-                    <h2><a href="https://blackmetalstore.com/en/product/ophirae-ophidian-digipack-cd/" target="_blank">- Click to buy the CD -</a></h2>
+                    <h2><a href="javascript:modalStoreOpen();">- Click to buy the CD -</a></h2>
                 </div>
             </div>
         </div>
 
+        <!-- Players -->
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
@@ -76,6 +77,7 @@
             </div>
         </div>
 
+        <!-- Instagram Preview -->
         <div class="container-fluid odd">
             <div class="container">
                 <div style="text-align: center;">
@@ -87,28 +89,66 @@
             </div>
         </div>
 
+        <!-- Support & Contacts -->
         <footer>
             <div class="container">
 
                 <div class="row p-5">
-                    <div class="col-lg-6">
-                        <h3><small>Support:</small></h3>
+                    <div class="col-lg-9">
+                        <h3>Support:</h3>
+                        
                     </div>
-                    <div class="col-lg-6" id="contact">
-                        <h3><small>Contact:</small></h3>
-                        <p><i class="fa fa-envelope"></i> metal@ophirae.pt</p>
-                        <p><i class="fab fa-instagram" style="color: indianred;"></i> Instagram</p>
-                        <p><i class="fab fa-facebook" style="color:#99f;"></i> Facebook</p>
-                        <p><i class="fab fa-youtube" style="color:#f55;"></i> Youtube</p>
+                    <div class="col-lg-3" id="contact">
+                        <h3>Contact:</h3>
+                        <ul>
+                            <li><a href="mailto:metal@ophirae.pt"><i class="fa fa-envelope"></i> General: metal@ophirae.pt</a></li>
+                            <li><a href="mailto:booking@ophirae.pt"><i class="fa fa-envelope"></i> Booking: booking@ophirae.pt</a></li>
+                            <li><a href="mailto:store@ophirae.pt"><i class="fa fa-envelope"></i> Store: store@ophirae.pt</a></li>
+                            <li><a href="https://instagram.com/ophiraeband"><i class="fab fa-instagram" style="color: indianred;"></i> @ophiraeband</a></li>
+                            <li><a href="https://www.facebook.com/ophiraemetalband/"><i class="fab fa-facebook" style="color:#0af;"></i> /ophiraemetalband</a></li>
+                            <li><a href="https://www.youtube.com/@ophiraeband"><i class="fab fa-youtube" style="color:#f55;"></i> @ophiraeband</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
+
+    <!-- Modal: Store -->
+    <div id="modalStore" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Find Your Store</h4>
+                <button type="button" class="close" onclick="modalStoreClose();">&times;</button>
+            </div>
+            <div class="modal-body">
+                <ul>
+                    <li>
+                        <span>Portugal</span>
+                        <br />
+                        <small>(contact us by e-mail)</small>
+                    </li>
+                    <li><a target="_blank" href="https://mutilationrecords.com/product/ophirae-ophidian/">Brazil</a></li>
+                    <li><a target="_blank" href="https://blackmetalstore.com/en/product/ophirae-ophidian-digipack-cd/">Worldwide</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" onclick="modalStoreClose();">Close</button>
+            </div>
+        </div>
+    
+        </div>
+    </div>
+
+    <!-- Fixed Footer -->
     <footer class="content-footer">
         All rights reserved &#xA9; Ophirae - 2023
     </footer>
 
+    <!-- Plugins & Cleanup Scripts -->
     <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <script type="text/javascript" language="javascript">
         var intBgColor = setInterval(function () {
@@ -116,7 +156,6 @@
                 clearInterval(intBgColor);
             }
         }, 500);
-
         var intLoadMore = setInterval(function () {
             var $buttonContainer = $(".electricblaze-id-2Uhx95X button").parent();
             if ($buttonContainer.length > 0) {
@@ -132,7 +171,15 @@
                 clearInterval(intAdvertise);
             }
         }, 400);
+
+        function modalStoreOpen() {
+         $("#modalStore").modal("show");
+        }
+        function modalStoreClose() {
+            $("#modalStore").modal("hide");
+        }
     </script>
     <input type="hidden" id="lastElement" />
+
 </body>
 </html>
