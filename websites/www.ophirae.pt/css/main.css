@@ -14601,3 +14601,12 @@ a.color-icon.border-icon:hover {
 .text-icon {
 	text-transform: uppercase;
 }
+
+div.row.support div{
+	text-align:center;
+}
+
+div.row.support div img {
+	height: 100px;
+
+}
