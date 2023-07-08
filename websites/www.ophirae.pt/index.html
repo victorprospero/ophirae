@@ -1,185 +1,532 @@
 ﻿<!DOCTYPE html>
-<html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
 <head>
-    <meta charset="utf-8" />
-    <link href="lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital,wght@0,400;1,400">
-    <link href="css/theme-default.css" rel="stylesheet" />
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="https://s.electricblaze.com/widget.js"></script>
-    <title>Ophirae - Debut album 'Ophidian' out now!</title>
+	<title>Ophirae - New album OUT NOW</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/cue.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/mediaelementplayer-legacy.css">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+spotify	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
 </head>
+
 <body>
-    <!-- Menu -->
-    <div class="sidebar">
-        <a class="active" href="index.html">Home</a>
-        <a href="#about">Who are us</a>
-        <a href="#presskit">Press Kit</a>
-        <a href="javascript:modalStoreOpen();">Store</a>
-        <a href="#contact">Contact</a>
-    </div>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+		
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding dark">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+			<ul class="list-unstyled">
+				<li>Message To User</li>
+			</ul>
+			-->
+		</div>
+	</div>
+	<!-- eof .modal -->
 
-    <!-- Header -->
-    <div class="content">
-        <div class="container-fluid header">
-            <div class="row">
-                <div class="col-lg-8 p-0">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="w-100" src="img/banner.jpg" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 logo-container">
-                            <img style="height: 200px; margin-top: -205px;" src="img/logo.png" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div><img class="w-100 album" style="width:85%;" src="img/album-front-cover.png" /></div>
-                    <h1>NEW ALBUM</h1>
-                    <h1>AVAILABLE</h1>
-                    <h2><a href="javascript:modalStoreOpen();">- Click to buy the CD -</a></h2>
-                </div>
-            </div>
-        </div>
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<section class="page_toplogo with_bottom_overlap_logo ls dark with_top_color_border columns_padding_0">
+				<div class="container">
+					<div class="row flex-wrap v-center">
+						<div class="col-sm-2 col-sm-push-3 text-left text-sm-center">
+							<div class="bottom_overlap_logo">
+								<a href="#box_wrapper" class="logo">
+	                    			<img src="images/logo.png" alt="">
+								</a> 
+							</div>
+							<!-- header toggler -->
+							<span class="toggle_menu"><span></span></span>
+						</div>
+						<div class="col-sm-3 col-sm-pull-2 hidden-xs"> 
+							<span class="small-text rightpadding_20 hidden-sm">follow us:</span>
+							<span class="divided-content">
+								<span><a class="social-icon socicon-facebook" href="https://www.facebook.com/ophiraemetalband/" title="Facebook" target="_blank"></a></span>
+								<span><a class="social-icon socicon-instagram" href="https://www.instagram.com/ophiraeband/" title="Instagram" target="_blank"></a></span>
+								<span><a class="social-icon socicon-youtube" href="https://www.youtube.com/@ophiraeband" title="Youtube" target="_blank"></a></span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<header class="page_header header_darkgrey header_transparent background_cover divided_items with_menu_icon">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<!-- main nav start -->
+							<nav class="mainmenu_wrapper">
+								<ul class="mainmenu nav sf-menu">
+									<li> <a href="#about">About</a> </li>
+									<li> <a href="#pride">Pride</a> </li>
+									<li> <a href="#sloth">Sloth</a> </li>
+									<li> <a href="#crawl">Crawl</a> </li>
+									<li> <a href="#albums">New Album</a> </li>
+									<li> <a href="#photos">Photos</a> </li>
+									<li> <a href="#subscribe">Subscribe</a> </li>
+									<li> <a href="#presskit">Press Kit</a> </li>
+								</ul>
+							</nav>
+							<!-- eof main nav -->
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="intro_section page_mainslider ds dark">
+				<div class="flexslider" data-dots="true" data-nav="ture">
+					<ul class="slides">
+						<li> <img src="images/slide01.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<h2 class="text-uppercase"> <span class="small">New Album</span> Ophidian <span class="small">Out Now!</span></h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="topmargin_30"> 
+														<a href="#albums" class="theme_button inverse min_width_button">Check it</a>
+													</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
 
-        <!-- Players -->
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-8 container-spotfy">
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/21iJ6amw6xVMnAfXOnbGRX?utm_source=generator" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="container-youtube">
-                            <iframe src="http://www.youtube.com/embed/liRr5ubEnZo?autoplay=0" allowfullscreen="" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="container-youtube">
-                            <iframe src="http://www.youtube.com/embed/Zq4faQljagU?autoplay=0" allowfullscreen="" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3"></div>
-                    <div class="col-lg-6">
-                        <div class="container-youtube">
-                            <iframe src="http://www.youtube.com/embed/R4WT3FkC8ew?autoplay=0" allowfullscreen="" frameborder="0"></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+						<li> <img src="images/slide02.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<h2 class="text-uppercase">
+														<span class="small">We are on all music</span> Streaming Platforms
+													</h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="small-text">Find us on your preferred platform</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
 
-        <!-- Instagram Preview -->
-        <div class="container-fluid odd">
-            <div class="container">
-                <div style="text-align: center;">
-                    <a href="https://instagram.com/ophiraeband" class="btn btn-primary">
-                        <i class="fab fa-instagram" style="color: indianred;"></i> Follow us on Instagram
-                    </a>
-                </div>
-                <div class="electricblaze-id-2Uhx95X"></div>
-            </div>
-        </div>
+						<li> <img src="images/slide03.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12 text-center">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<h2 class="text-uppercase"> <span class="small">Watch our video</span> Pride </h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="small-text"> Embrace your insignificance<br /> Accept your End</p>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="topmargin_30">
+														<a href="#pride" class="theme_button inverse min_width_button">Whatch now</a>
+													</p>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
 
-        <!-- Support & Contacts -->
-        <footer>
-            <div class="container">
+			<section id="about" class="ls dark section_padding_top_40 section_padding_bottom_40 table_section table_section_md columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6"> <img src="images/about.jpg" alt=""> </div>
+						<div class="col-md-6 col-md-pull-6">
+							<h2 class="section_header"> <span class="small">Story of</span> Ophirae </h2>
+							<hr class="header_divider">
+							<p class="small-text big"> Embrace your insignificance... <span class="highlight">Accept your end</span></p>
+							<p><strong>OPHIRAE</strong> is a death/black metal band formed in 2012 by competent musicians from the brazilian underground elite who prefer to keep their identities obscure, adding mistery to a melodic and extremely deep ambience.</p>
+							<p>After the success of the singles "Pride" and "Sloth", the band released the album "Ophidian" in 2022. Later released the third video clip "Crawl" and went to a brazilian mini tour alongside the americans of <strong>Toxic Holocaust</strong>.</p>
+							<p>The album "Ophidian" features the special participation of Astaroth (Besatt), Paolo Bruno (Thy Light) and Luiz Louzada (Vulcano) and the release was made in a partnership between <strong>Mutilation Productions</strong> and <strong>Black Metal Store</strong>.</p>
+							<p>Today the band is based in Portugal and is preparing the next album.</p>
+							<div class="content-justify vertical-center content-margins topmargin_25"> 
+								<span class="divided-content outside-dividers">
+									<span><a class="social-icon socicon-facebook" href="https://www.facebook.com/ophiraemetalband/" title="Facebook" target="_blank"></a></span> 
+									<span><a class="social-icon socicon-instagram" href="https://www.instagram.com/ophiraeband/" title="Instagram" target="_blank"></a></span> 
+									<span><a class="social-icon socicon-youtube" href="https://www.youtube.com/@ophiraeband" title="Youtube" target="_blank"></a></span>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <div class="row p-5">
-                    <div class="col-lg-9">
-                        <h3>Support:</h3>
-                        
-                    </div>
-                    <div class="col-lg-3" id="contact">
-                        <h3>Contact:</h3>
-                        <ul>
-                            <li><a href="mailto:metal@ophirae.pt"><i class="fa fa-envelope"></i> General: metal@ophirae.pt</a></li>
-                            <li><a href="mailto:booking@ophirae.pt"><i class="fa fa-envelope"></i> Booking: booking@ophirae.pt</a></li>
-                            <li><a href="mailto:store@ophirae.pt"><i class="fa fa-envelope"></i> Store: store@ophirae.pt</a></li>
-                            <li><a href="https://instagram.com/ophiraeband"><i class="fab fa-instagram" style="color: indianred;"></i> @ophiraeband</a></li>
-                            <li><a href="https://www.facebook.com/ophiraemetalband/"><i class="fab fa-facebook" style="color:#0af;"></i> /ophiraemetalband</a></li>
-                            <li><a href="https://www.youtube.com/@ophiraeband"><i class="fab fa-youtube" style="color:#f55;"></i> @ophiraeband</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+			<section id="pride" class="ds dark background_cover section_padding_top_150 section_padding_bottom_150 columns_margin_top_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center"> 
+							<a href="https://www.youtube.com/watch?v=liRr5ubEnZo&lc=UgwnQeSz4Akv7lgNvWZ4AaABAg" class="theme_button inverse round_button margin_0" data-gal="prettyPhoto[gal-video]">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+							</a>
+							<h2 class="section_header bottommargin_0 topmargin_30"> Ophirae - Pride</h2>
+							<h5 class="margin_0">First single for the album Ophidian</h5>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <!-- Modal: Store -->
-    <div id="modalStore" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-    
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Find Your Store</h4>
-                <button type="button" class="close" onclick="modalStoreClose();">&times;</button>
-            </div>
-            <div class="modal-body">
-                <ul>
-                    <li>
-                        <span>Portugal</span>
-                        <br />
-                        <small>(contact us by e-mail)</small>
-                    </li>
-                    <li><a target="_blank" href="https://mutilationrecords.com/product/ophirae-ophidian/">Brazil</a></li>
-                    <li><a target="_blank" href="https://blackmetalstore.com/en/product/ophirae-ophidian-digipack-cd/">Worldwide</a></li>
-                </ul>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" onclick="modalStoreClose();">Close</button>
-            </div>
-        </div>
-    
-        </div>
-    </div>
+			<section id="sloth" class="ds dark background_cover section_padding_top_150 section_padding_bottom_150 columns_margin_top_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center"> 
+							<a href="https://www.youtube.com/watch?v=Zq4faQljagU" class="theme_button inverse round_button margin_0" data-gal="prettyPhoto[gal-video]">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+							</a>
+							<h2 class="section_header bottommargin_0 topmargin_30"> Ophirae - Sloth</h2>
+							<h5 class="margin_0">Second single for the album Ophidian</h5>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <!-- Fixed Footer -->
-    <footer class="content-footer">
-        All rights reserved &#xA9; Ophirae - 2023
-    </footer>
+			<section id="crawl" class="ds dark background_cover section_padding_top_150 section_padding_bottom_150 columns_margin_top_30 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center"> 
+							<a href="https://www.youtube.com/watch?v=R4WT3FkC8ew" class="theme_button inverse round_button margin_0" data-gal="prettyPhoto[gal-video]">
+								<i class="fa fa-caret-right" aria-hidden="true"></i>
+							</a>
+							<h2 class="section_header bottommargin_0 topmargin_30"> Ophirae - Crawl</h2>
+							<h5 class="margin_0">The newest video clip</h5>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<section id="photos" class="ls dark ms section_padding_top_65 columns_padding_0">
+				<div class="container-fluid">
+					<div class="col-sm-12 bottommargin_0">
+						<div class="filters carousel_filters bottommargin_40 divided-content">
+							<a href="#" class="selected" data-filter="*">All</a>
+							<a href="#" data-filter=".concerts">Concerts</a>
+						</div>
+						<div class="owl-carousel owl-center-scale gallery-carousel" data-nav="true" data-dots="false" data-margin="0" data-center="true" data-loop="true" data-responsive-sm="2" data-responsive-xs="2" data-responsive-xxs="1" data-filters=".carousel_filters">
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/01.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/01.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/05.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/05.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/02.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/02.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/06.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/06.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/03.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/03.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/16.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/16.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/15.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/15.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/09.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/09.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/04.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/04.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/17.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/17.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/10.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/10.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/07.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/07.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/11.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/11.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/12.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/12.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/13.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/13.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							<div class="vertical-item concerts">
+								<div class="item-media"> <img src="images/gallery/14.jpg" alt="" />
+									<div class="media-links">
+										<div class="links-wrap"> <a class="p-view prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images/gallery/14.jpg"></a> </div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <!-- Plugins & Cleanup Scripts -->
-    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-    <script type="text/javascript" language="javascript">
-        var intBgColor = setInterval(function () {
-            if ($(".electricblaze-id-2Uhx95X *:not('button')").css("background-color", "Transparent").length > 0) {
-                clearInterval(intBgColor);
-            }
-        }, 500);
-        var intLoadMore = setInterval(function () {
-            var $buttonContainer = $(".electricblaze-id-2Uhx95X button").parent();
-            if ($buttonContainer.length > 0) {
-                $buttonContainer.remove();
-                clearInterval(intBgColor);
-            }
-        }, 500);
+			<section id="albums" class="ls dark section_padding_top_130 section_padding_bottom_100 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header">New Album</h2>
+							<hr class="header_divider">
+							<p class="small-text big">Check out our new album "OPHIDIAN". You can easily listen on all music streaming platforms.</p>
+						</div>
+					</div>
+					<div class="row topmargin_30">
+						<div class="col-md-4 col-sm-6"></div>
+						<div class="col-md-4 col-sm-6">
+							<div class="vertical-item slide-media text-center loop-color">
+								<div class="item-media-wrap"> <img src="images/albums/01.jpg" alt="">
+									<div class="item-media back-media"> <img src="images/albums/cd.png" alt=""> </div>
+									<div class="item-media"> 
+										<img src="images/albums/01.jpg" alt="">
+										<div class="media-links no-overlay">
+											<div class="bottom-links"> 
+												<a href="https://music.apple.com/pt/album/ophidian/1632978186" target="blank" style="cursot:pointer;"><img src="images/app-store.png" alt=""></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item-content topmargin_30">
+									<h4 class="entry-title bottommargin_0"><a href="single-album.html">Ophirae - Ophidian (2022)</a></h4> 
+									<!-- <span class="price">$99,85</span> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p class="small-text big">You also can purchase the deluxe digipack CD in one of our stores:</p>
+							<p class="topmargin_30"> 
+								<a href="https://mutilationrecords.com/product/ophirae-ophidian/" class="theme_button inverse min_width_button" target="_blank">Brasil</a>
+								<a href="#0" class="theme_button inverse min_width_button">Portugal</a>
+								<a href="https://blackmetalstore.com/en/product/ophirae-ophidian-digipack-cd/" class="theme_button inverse min_width_button" target="_blank">Worldwide</a>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-8 col-sm-push-2 text-center">
+							<iframe style="border-radius:12px; min-height: 500px;" src="https://open.spotify.com/embed/artist/3zetOZo5qg9hzqzsJrS50m?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<footer id="subscribe" class="page_footer ds dark section_padding_top_100 section_padding_bottom_75">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="cs gradient_bg with_padding big-padding">
+								<div class="row columns_padding_0">
+									<div class="col-md-3 col-sm-4 text-center text-sm-left">
+										<h5 class="margin_0"> <span class="small">Register for</span><br> Our newsletter </h5>
+									</div>
+									<div class="col-md-6 col-sm-4">
+										<div class="widget widget_mailchimp margin_0">
+											<form class="signup" action="./" method="get">
+												<div class="form-group margin_0"> <input class="mailchimp_email form-control" name="email" required="" type="email" placeholder="Email Address"> </div>
+												<button type="submit" class="theme_button color3 no_bg_button">Subscribe now</button>
+												<div class="response"></div>
+											</form>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-4 text-center text-sm-right">
+										<h5 class="margin_0"> <span class="small">Get the latest</span><br> Ophirae's news </h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row topmargin_30">
 
-        var intAdvertise = setInterval(function () {
-            var $lastElement = $("#lastElement").next();
-            if ($lastElement.length > 0) {
-                $lastElement.remove();
-                clearInterval(intAdvertise);
-            }
-        }, 400);
+						<div class="col-md-4 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> New album </h4>
+								<ul class="greylinks list-unstyled">
+									<li> <a href="#albums">Ophidian (2022)</a> </li>
+								</ul>
+							</div>
+						</div>
 
-        function modalStoreOpen() {
-         $("#modalStore").modal("show");
-        }
-        function modalStoreClose() {
-            $("#modalStore").modal("hide");
-        }
-    </script>
-    <input type="hidden" id="lastElement" />
-
+						<div class="col-md-4 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Download Avaliable </h4>
+								<p>You can listen to our music on all streaming platforms</p>
+								<div class="big-icons topmargin_25"> 
+									<a href="https://music.apple.com/pt/artist/ophirae/1632072543" class="social-icon border-icon socicon-apple" target="_blank"></a> 
+									<a href="https://open.spotify.com/intl-pt/artist/3zetOZo5qg9hzqzsJrS50m" class="social-icon border-icon socicon-spotify" target="_blank"></a>
+									<a href="https://www.amazon.com/music/player/artists/B0B5HTZLZV/ophirae" class="social-icon border-icon socicon-amazon" target="_blank"></a> 
+									<a href="https://www.deezer.com/en/artist/175209437" class="social-icon border-icon socicon-deezer" target="_blank"></a> 
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Contact us </h4>
+								<ul class="list-unstyled greylinks">
+									<li>+351 912 785 820</li>
+									<li><a href="mailto:metal@ophirae.pt">metal@ophirae.pt</a></li>
+									<li><a href="mailto:store@ophirae.pt">store@ophirae.pt</a></li>
+									<li><a href="mailto:booking@ophirae.pt">booking@ophirae.pt</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds dark page_copyright section_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="divided-content bottommargin_5"> 
+								<span><a class="social-icon socicon-facebook" href="https://www.facebook.com/ophiraemetalband/" title="Facebook" target="_blank"></a></span> 
+								<span><a class="social-icon socicon-instagram" href="https://www.instagram.com/ophiraeband/" title="Instagram" target="_blank"></a></span> 
+								<span><a class="social-icon socicon-youtube" href="https://www.youtube.com/@ophiraeband" title="Youtube" target="_blank"></a></span>
+							</div>
+							<p class="small-text big-spacing">&copy; Copyright 2023. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Google Map Script -->
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTwYSMRGuTsmfl2z_zZDStYqMlKtrybxo"></script>
 </body>
+
 </html>
