@@ -1,4 +1,3 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.33529.622
@@ -6,8 +5,65 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "websites", "websites", "{EC3D8F03-16B6-429D-9A45-076270BCCDAD}"
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "www.ophirae.pt", "websites\www.ophirae.pt\", "{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61756"
+		Debug.AspNetCompiler.PhysicalPath = "websites\www.ophirae.pt\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61756\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61756"
+		Release.AspNetCompiler.PhysicalPath = "websites\www.ophirae.pt\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61756\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61756"
+		SlnRelativePath = "websites\www.ophirae.pt\"
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "www.ophirae.pt", "www.ophirae.pt\www.ophirae.pt.csproj", "{5A7272FC-F78F-420D-A432-C34B9D5F9FEE}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "themeforest-uyHqNzwL-thecrowd-rock-band-page-html-template-with-page-builder", "websites\themeforest-uyHqNzwL-thecrowd-rock-band-page-html-template-with-page-builder\", "{9E736BEF-2592-4A62-8897-ECE8B205F8C1}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61764"
+		Debug.AspNetCompiler.PhysicalPath = "websites\themeforest-uyHqNzwL-thecrowd-rock-band-page-html-template-with-page-builder\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61764\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61764"
+		Release.AspNetCompiler.PhysicalPath = "websites\themeforest-uyHqNzwL-thecrowd-rock-band-page-html-template-with-page-builder\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61764\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61764"
+		SlnRelativePath = "websites\themeforest-uyHqNzwL-thecrowd-rock-band-page-html-template-with-page-builder\"
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7FD0D3D-E326-448B-B92C-5E63F9E0248A}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{242D0814-4640-4AFD-B252-48BB0A53C103}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EMail", "EMail", "{2E821042-F25E-44E2-B103-A6156E8D876A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Application", "services\email\EMail.Application\EMail.Application.csproj", "{0E585904-C155-46E3-8DBF-D2F496D33CFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Domain", "services\email\EMail.Domain\EMail.Domain.csproj", "{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Infrastructure", "services\email\EMail.Infrastructure\EMail.Infrastructure.csproj", "{30755122-FA03-41C3-9BD1-64AFF026B146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.API", "services\email\EMail.API\EMail.API.csproj", "{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{54D50337-D50B-4460-B2D3-70753A301526}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,16 +73,44 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A7272FC-F78F-420D-A432-C34B9D5F9FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A7272FC-F78F-420D-A432-C34B9D5F9FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A7272FC-F78F-420D-A432-C34B9D5F9FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A7272FC-F78F-420D-A432-C34B9D5F9FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{9E736BEF-2592-4A62-8897-ECE8B205F8C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E736BEF-2592-4A62-8897-ECE8B205F8C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E736BEF-2592-4A62-8897-ECE8B205F8C1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E736BEF-2592-4A62-8897-ECE8B205F8C1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0E585904-C155-46E3-8DBF-D2F496D33CFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E585904-C155-46E3-8DBF-D2F496D33CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E585904-C155-46E3-8DBF-D2F496D33CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E585904-C155-46E3-8DBF-D2F496D33CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30755122-FA03-41C3-9BD1-64AFF026B146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30755122-FA03-41C3-9BD1-64AFF026B146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30755122-FA03-41C3-9BD1-64AFF026B146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30755122-FA03-41C3-9BD1-64AFF026B146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54D50337-D50B-4460-B2D3-70753A301526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54D50337-D50B-4460-B2D3-70753A301526}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54D50337-D50B-4460-B2D3-70753A301526}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54D50337-D50B-4460-B2D3-70753A301526}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{785B8D82-66DD-46F2-AAFE-DEBBEBF8D8EC} = {EC3D8F03-16B6-429D-9A45-076270BCCDAD}
+		{9E736BEF-2592-4A62-8897-ECE8B205F8C1} = {EC3D8F03-16B6-429D-9A45-076270BCCDAD}
+		{2E821042-F25E-44E2-B103-A6156E8D876A} = {242D0814-4640-4AFD-B252-48BB0A53C103}
+		{0E585904-C155-46E3-8DBF-D2F496D33CFC} = {2E821042-F25E-44E2-B103-A6156E8D876A}
+		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162} = {2E821042-F25E-44E2-B103-A6156E8D876A}
+		{30755122-FA03-41C3-9BD1-64AFF026B146} = {2E821042-F25E-44E2-B103-A6156E8D876A}
+		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724} = {2E821042-F25E-44E2-B103-A6156E8D876A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {610FDDD8-C21F-4F70-9ADB-488EF0597482}

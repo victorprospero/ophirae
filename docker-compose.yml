@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  email.api:
+    image: ${DOCKER_REGISTRY-}emailapi
+    build:
+      context: .
+      dockerfile: services/email/EMail.API/Dockerfile
