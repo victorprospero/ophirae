@@ -48,6 +48,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "themeforest-uyHqNzwL-thecro
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C7FD0D3D-E326-448B-B92C-5E63F9E0248A}"
 	ProjectSection(SolutionItems) = preProject
+		aws-ec2.ppk = aws-ec2.ppk
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -55,15 +56,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{24
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EMail", "EMail", "{2E821042-F25E-44E2-B103-A6156E8D876A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Application", "services\email\EMail.Application\EMail.Application.csproj", "{0E585904-C155-46E3-8DBF-D2F496D33CFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EMail.Application", "services\email\EMail.Application\EMail.Application.csproj", "{0E585904-C155-46E3-8DBF-D2F496D33CFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Domain", "services\email\EMail.Domain\EMail.Domain.csproj", "{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EMail.Domain", "services\email\EMail.Domain\EMail.Domain.csproj", "{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.Infrastructure", "services\email\EMail.Infrastructure\EMail.Infrastructure.csproj", "{30755122-FA03-41C3-9BD1-64AFF026B146}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EMail.API", "services\email\EMail.API\EMail.API.csproj", "{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EMail.Infrastructure", "services\email\EMail.Infrastructure\EMail.Infrastructure.csproj", "{30755122-FA03-41C3-9BD1-64AFF026B146}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{54D50337-D50B-4460-B2D3-70753A301526}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EMail.API", "services\email\EMail.API\EMail.API.csproj", "{98CFE181-2C12-4963-B8EB-21B8888B70A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -91,14 +92,14 @@ Global
 		{30755122-FA03-41C3-9BD1-64AFF026B146}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30755122-FA03-41C3-9BD1-64AFF026B146}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30755122-FA03-41C3-9BD1-64AFF026B146}.Release|Any CPU.Build.0 = Release|Any CPU
-		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724}.Release|Any CPU.Build.0 = Release|Any CPU
 		{54D50337-D50B-4460-B2D3-70753A301526}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{54D50337-D50B-4460-B2D3-70753A301526}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54D50337-D50B-4460-B2D3-70753A301526}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54D50337-D50B-4460-B2D3-70753A301526}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CFE181-2C12-4963-B8EB-21B8888B70A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CFE181-2C12-4963-B8EB-21B8888B70A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CFE181-2C12-4963-B8EB-21B8888B70A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CFE181-2C12-4963-B8EB-21B8888B70A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,7 +111,7 @@ Global
 		{0E585904-C155-46E3-8DBF-D2F496D33CFC} = {2E821042-F25E-44E2-B103-A6156E8D876A}
 		{E2A47AE0-1D1B-4E2F-B5B4-B5CE5EBD8162} = {2E821042-F25E-44E2-B103-A6156E8D876A}
 		{30755122-FA03-41C3-9BD1-64AFF026B146} = {2E821042-F25E-44E2-B103-A6156E8D876A}
-		{79B7B008-4F33-43FC-B0B4-5EF3FBEC2724} = {2E821042-F25E-44E2-B103-A6156E8D876A}
+		{98CFE181-2C12-4963-B8EB-21B8888B70A5} = {2E821042-F25E-44E2-B103-A6156E8D876A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {610FDDD8-C21F-4F70-9ADB-488EF0597482}

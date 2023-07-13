@@ -11,7 +11,7 @@ namespace EMail.Infrastructure.Repositories
 {
     public class EMailRepository : BaseRepository, IEMailRepository
     {
-        public EMailRepository() : base("storage/email-accounts.txt") { }
+        public EMailRepository() : base("email-accounts.txt") { }
 
         public async Task<IEnumerable<EMailAccountModel>> List()
         {

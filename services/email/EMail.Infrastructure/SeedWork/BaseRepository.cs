@@ -1,5 +1,4 @@
 ﻿using EMail.Domain.SeedWork;
-using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -9,39 +8,31 @@ namespace EMail.Infrastructure.SeedWork
 {
     public class BaseRepository
     {
-        protected string StorageFilePath { get; }
+        private string StorageFilePath { get; }
+        private readonly string StorageDirectory = "storage";
 
-
-        protected BaseRepository(string storageFilePath)
+        protected BaseRepository(string storageFileName)
         {
-            StorageFilePath = storageFilePath;
+            StorageFilePath = $"{StorageDirectory}/{storageFileName}";
+            if (!Directory.Exists(StorageDirectory))
+            {
+                Directory.CreateDirectory(StorageDirectory);
+            }
         }
 
         protected async Task<string> ReadData()
         {
             if (File.Exists(StorageFilePath))
             {
-                try
-                {
-                    return await File.ReadAllTextAsync(StorageFilePath);
-                }
-                catch (Exception) { }
+                return await File.ReadAllTextAsync(StorageFilePath);
             }
             return string.Empty;
         }
 
         public bool ResetStorage()
         {
-            if (!File.Exists(StorageFilePath)) return true;
-            
-            try
-            {
-                File.Delete(StorageFilePath);
-                return true;
-            }
-            catch (Exception) { }
-            
-            return false;
+            if (File.Exists(StorageFilePath)) File.Delete(StorageFilePath);
+            return true;
         }
 
         protected async Task<bool> SaveData<T>(IEnumerable<T> data) where T : BaseEntity
@@ -49,12 +40,7 @@ namespace EMail.Infrastructure.SeedWork
             IEnumerable<string> dataToSave = data.Select(x => x.Serialize());
             if (this.ResetStorage())
             {
-                try
-                {
-                    await File.AppendAllLinesAsync(StorageFilePath, dataToSave);
-                    return true;
-                }
-                catch (Exception) { }
+                await File.AppendAllLinesAsync(StorageFilePath, dataToSave);
             }
             return false;
         }

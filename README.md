@@ -5,6 +5,5 @@ The projects can be opened using MS Visual Studio
 
 ## TODO List (website)
 
-* Presskit download
 * Subscribe Mailing List
 * Https Redirection

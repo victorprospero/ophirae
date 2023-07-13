@@ -1,10 +1,13 @@
-using Autofac.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
+using Autofac.Extensions.DependencyInjection;
 
 namespace EMail.API
 {
-    public class Program
+    /// <summary>
+    /// The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
+    /// </summary>
+    public class LocalEntryPoint
     {
         public static void Main(string[] args)
         {
@@ -12,7 +15,6 @@ namespace EMail.API
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
-
             Host.CreateDefaultBuilder(args)
                 .UseServiceProviderFactory(new AutofacServiceProviderFactory())
                 .ConfigureWebHostDefaults(webBuilder =>
